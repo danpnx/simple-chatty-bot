@@ -45,7 +45,7 @@ public class SimpleBot {
 			System.out.println("3. To determine the execution time of a program.");
 			System.out.println("4. To interrupt the execution of a program.");
 			
-			System.out.print("Digite a sua resposta: ");
+			System.out.print("Your answer: ");
 			testAnswer = scanner.nextByte();
 			
 			if(testAnswer == 2) {
