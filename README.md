@@ -19,12 +19,12 @@ Ex:
 `int million = 1_000_000;`
 
 # Caracteres
-'\n' is the newline character;
-'\t' is the tab character;
-'\r' is the carriage return character;
-'\\' is the backslash character itself;
-'\'' is the single quote mark;
-'\"' is the double quote mark.]
+- `'\n'` is the newline character;
+- `'\t'` is the tab character;
+- `'\r'` is the carriage return character;
+- `'\\'` is the backslash character itself;
+- `'\''` is the single quote mark;
+- `'\"'` is the double quote mark.
 
 # String
 ## Exceptions when processing strings
