@@ -18,6 +18,11 @@ public class Person {
 		return personAge;
 	}
 	
+	public void greetPerson() {
+		System.out.printf("Olá, %s. Tenha um bom dia!%n", personName);
+		System.out.println();
+	}
+	
 	private String[] investimentosPreferidos = new String[5];
 	public void setInvestimentosPreferidos(int escolha, int index) {
 		switch(escolha) {
@@ -77,10 +82,6 @@ public class Person {
 	}
 	public String[] getInvestimentosPreferidos() {
 		return investimentosPreferidos;
-	}
-	
-	public void greetPerson() {
-		System.out.printf("Hi, %s. Have a nice day!%n", personName);
 	}
 	
 	public void showInvestimentosPreferidos() {

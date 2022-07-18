@@ -7,12 +7,33 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		Person botOwner = new Person();
 		int index = 0;
-		int choose;
+		int chooseInvestimento;
 		
 		botOwner.setPersonName("Daniel Nunes");
 		botOwner.setPersonAge(26);
+		introduceYourself();
 		botOwner.greetPerson();
 		
+		mostrarOpcoesInvestimentos();
+		do {
+			System.out.print("Faça uma escolha: ");
+			chooseInvestimento = scanner.nextInt();
+			botOwner.setInvestimentosPreferidos(chooseInvestimento, index);
+			index++;
+		} while(index < 5);
+		botOwner.showInvestimentosPreferidos();
+		
+		scanner.close();
+	}
+	
+	public static void introduceYourself() {
+		System.out.println("Olá! O meu nome é Empy.");
+		System.out.println("Estou super ansiosx para me juntar a você nesta sua jornada de crescimento financeiro.");
+		System.out.println("Você pode contar comigo!");
+		System.out.println();
+	}
+	
+	public static void mostrarOpcoesInvestimentos() {
 		System.out.println("Escolha 5 investimentos que mais combinam com o seu perfil");
 		System.out.println("1. Ações");
 		System.out.println("2. CDB");
@@ -27,14 +48,5 @@ public class Main {
 		System.out.println("11. Tesouro IPCA");
 		System.out.println("12. Tesouro Prefixado");
 		System.out.println("13. Tesouro Selic");
-		
-		do {
-			System.out.print("Faça uma escolha: ");
-			choose = scanner.nextInt();
-			botOwner.setInvestimentosPreferidos(choose, index);
-			index++;
-		} while(index < 5);
-		
-		botOwner.showInvestimentosPreferidos();
 	}
 }
